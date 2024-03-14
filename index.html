@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section>
+        <form method="post" name="form" onsubmit="return validation()">
+            <h2>user Log in</h2>
+            <label for="email">Email Address:</label><br>
+            <input type="email" name="email"
+            placeholder="email address"  class="names"> <br>
+            <div id="email-error">
+             Fill up your email address!
+            </div>
+            <label for="password" class="label2">Password:</label><br>
+            <input type="password" name="password" placeholder="password"  class="names"> <br>
+            <div id="pass-error">
+             fill up your password!
+            </div>
+            <input type="submit" class="button">
+            <!-- <button>log in</button> -->
+            <p class="option">Don't have an account? <a href="#">Sign up</a></p>
+        </form>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>
